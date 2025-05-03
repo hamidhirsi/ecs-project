@@ -12,13 +12,6 @@ permissions:
   contents: read
 
 jobs:
-  terraform_static_analysis:
-    name: 'Terraform Static Analysis'
-    runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
 
   terraform_destroy:
     name: 'Terraform Destroy'
