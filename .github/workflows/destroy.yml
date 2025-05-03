@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch'
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
 
   terraform_destroy:
@@ -26,6 +26,9 @@ jobs:
     needs: terraform_static_analysis
     if: github.event_name == 'workflow_dispatch' && github.event.inputs.confirmation == 'yes'
     steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       # Configure AWS Credentials (use v4 for consistency)
       - name: Configure AWS Credentials
