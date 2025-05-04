@@ -16,7 +16,7 @@ resource "aws_ecs_task_definition" "ecs-td" {
   task_role_arn      = aws_iam_role.exec_role.arn
 
   runtime_platform {
-      cpu_architecture        = "ARM64"
+      cpu_architecture        = "X86_64"
       operating_system_family = "LINUX"
     }
 
