@@ -6,7 +6,7 @@ variable "vpc_cidr_block" {
 variable "vpc_name" {
   type        = string
   description = "The name tag for the VPC"
-  default     = "delta-vpc"
+  default     = "vpc"
 }
 
 variable "public_subnet_cidrs" {
@@ -22,13 +22,13 @@ variable "subnet_availability_zones" {
 variable "igw_name" {
   type        = string
   description = "Name of internet gateway"
-  default     = "delta-igw"
+  default     = "igw"
 }
 
 variable "route_table_name" {
   type        = string
   description = "Name of route table"
-  default     = "delta-rt"
+  default     = "rt"
 }
 
 variable "ecs_sg_name" {
