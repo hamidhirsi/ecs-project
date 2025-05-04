@@ -1,5 +1,8 @@
   # AWS ECS Deployment 🚀
 
+<img width="826" alt="Screenshot 2025-05-04 at 14 03 07" src="https://github.com/user-attachments/assets/91e6cede-9e4e-43ea-a872-cc6067bb5fd8" />
+
+
 This project contains the Terraform code and Dockerfile to deploy the **HyperTrio** web application on **AWS ECS Fargate**, behind a **public ALB with HTTPS**, using **ACM, Route 53**, and **Cloudflare** for DNS.
 
 > ⚙️ Just edit a few values in `terraform.tfvars`, follow the steps below, and you're live.
