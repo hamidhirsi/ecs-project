@@ -1,4 +1,4 @@
-# HyperTrio ECS Deployment 🚀
+  # AWS ECS Deployment 🚀
 
 This project contains the Terraform code and Dockerfile to deploy the **HyperTrio** web application on **AWS ECS Fargate**, behind a **public ALB with HTTPS**, using **ACM, Route 53**, and **Cloudflare** for DNS.
 
