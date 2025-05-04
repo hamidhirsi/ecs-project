@@ -9,10 +9,10 @@ This project contains the Terraform code and Dockerfile to deploy the **HyperTri
 ## 🌐 Prerequisites
 
 - AWS account (with permissions to manage ECS, ALB, ACM, ECR, Route 53)
-- A domain managed via **Cloudflare**
+- Created a domain on **Cloudflare**
 - Terraform installed
 - Docker installed
-- AWS CLI configured
+- AWS CLI configured using 'aws configure' command and AWS security credentials.
 
 ---
 
