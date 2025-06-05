@@ -37,6 +37,7 @@ resource "aws_ecs_task_definition" "ecs-td" {
         awslogs-group         = "/ecs/${var.ecs_family}"
         awslogs-region        = var.location
         awslogs-stream-prefix = "ecs"
+        awslogs-create-group  = "true"
       }
     }
   }
