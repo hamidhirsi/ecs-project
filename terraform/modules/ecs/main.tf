@@ -37,7 +37,6 @@ resource "aws_ecs_task_definition" "ecs-td" {
         awslogs-group         = "/ecs/${var.ecs_family}"
         awslogs-region        = var.location
         awslogs-stream-prefix = "ecs"
-        awslogs-create-group  = "true"
       }
     }
   }
@@ -46,6 +45,11 @@ resource "aws_ecs_task_definition" "ecs-td" {
   tags = {
     Name = var.ecs_family
   }
+}
+
+resource "aws_cloudwatch_log_group" "ecs_log_group" {
+  name              = "/ecs/${var.ecs_family}"
+  retention_in_days = 7
 }
 
 resource "aws_ecs_service" "ecs-service" {
