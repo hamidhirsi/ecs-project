@@ -18,14 +18,6 @@ This project contains the Terraform code and Dockerfile to deploy the **threatmo
 
 ---
 
----
-
-### Architecture Diagram:
-
-![alt text](./images/Architecture%20Diagram.gif)
-
----
-
 ### Local App Setup 💻
 
 ```bash
