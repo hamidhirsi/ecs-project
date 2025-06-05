@@ -12,8 +12,8 @@ ecs_name       = "threatmodel-ecs"
 ecs_family     = "threatmodel-task"
 service_name   = "threatmodel-service"
 exec_role      = "ecsTaskExecutionRole"
-cpu            = 512
-memory         = 1024
+cpu            = 1024
+memory         = 2048
 
 # ALB
 alb_name = "threatmodel-alb"

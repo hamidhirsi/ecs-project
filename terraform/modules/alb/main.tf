@@ -14,6 +14,16 @@ resource "aws_lb_target_group" "tg" {
   protocol    = "HTTP"
   target_type = "ip"
   vpc_id      = var.vpc_id
+
+  health_check {
+    path                = "/"
+    protocol            = "HTTP"
+    interval            = 45
+    timeout             = 40         
+    healthy_threshold   = 2
+    unhealthy_threshold = 3
+    matcher             = "200-399"
+  }
 }
 
 resource "aws_lb_listener" "listener-http" {

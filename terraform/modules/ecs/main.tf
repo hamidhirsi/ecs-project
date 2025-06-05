@@ -69,6 +69,8 @@ resource "aws_ecs_service" "ecs-service" {
     type = "ECS"
   }
 
+  health_check_grace_period_seconds = 60
+
   load_balancer {
     target_group_arn = var.tg_arn
     container_name   = var.ecs_name
