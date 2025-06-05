@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD [ "yarn", "start" ]
+CMD ["sh", "-c", "yarn start --host 0.0.0.0"]
