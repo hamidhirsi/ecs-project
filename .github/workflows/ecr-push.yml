@@ -32,6 +32,6 @@ jobs:
         env:
           ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
         run: |
-          docker build -t $ECR_REGISTRY:latest -f Dockerfile ./hypertrio
+          docker build -t $ECR_REGISTRY:latest -f Dockerfile .
           docker push $ECR_REGISTRY:latest
           # echo "image=$ECR_REGISTRY:latest" >> $GITHUB_OUTPUT
